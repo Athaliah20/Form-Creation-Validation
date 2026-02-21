@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #4a90e2;
+    --background-color: #f4f7f6;
+    --text-color: #333;
+    --card-bg: #fff;
+    --error-color: #e74c3c;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+#api-data {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+#api-data:hover {
+    transform: translateY(-5px);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+li {
+    background: #fafafa;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    font-size: 1.1rem;
+    transition: background 0.2s;
+}
+
+li:hover {
+    background: #f0f7ff;
+}
+
+#api-data p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.error-message {
+    color: var(--error-color);
+    font-weight: bold;
+}
